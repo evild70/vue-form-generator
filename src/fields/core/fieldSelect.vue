@@ -1,12 +1,26 @@
-<template lang="pug">
-	select.form-control(v-model="value", :disabled="disabled", :name="schema.inputName", :id="getFieldID(schema)", :class="schema.fieldClasses", v-attributes="'input'")
-		option(v-if="!selectOptions.hideNoneSelectedText", :disabled="schema.required", :value="null") {{ selectOptions.noneSelectedText || "&lt;Nothing selected&gt;" }}
+<template lang="html">
+	<select class="form-control"
+		v-model="value"
+		:disabled="disabled"
+		:name="schema.inputName"
+		:id="getFieldID(schema)"
+		:class="schema.fieldClasses"
+		v-attributes="'input'">
+		<option v-if="!selectOptions.hideNoneSelectedText" :disabled="schema.required" :value="null">
+			{{ selectOptions.noneSelectedText || "&lt;Nothing selected&gt;" }}
+		</option>
 
-		template(v-for="item in items")
-			optgroup(v-if="item.group", :label="getGroupName(item)")
-				option(v-if="item.ops", v-for="i in item.ops", :value="getItemValue(i)") {{ getItemName(i) }}
-
-			option(v-if="!item.group", :value="getItemValue(item)") {{ getItemName(item) }}
+		<template v-for="(item, index) in items">
+			<optgroup v-if="item.group" :label="getGroupName(item)" :key="index">
+				<option v-if="item.ops" v-for="(i, index) in item.ops" :value="getItemValue(i)" :key="index">
+					{{ getItemName(i) }}
+				</option>
+			</optgroup>
+			<option v-if="!item.group" :value="getItemValue(item)" :key="index">
+				{{ getItemName(item) }}
+			</option>
+		</template>
+	</select>
 </template>
 
 <script>

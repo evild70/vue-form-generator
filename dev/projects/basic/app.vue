@@ -27,7 +27,7 @@ export default {
 			selected: [],
 
 			model: {
-				first_name: "David",
+				first_name: "",
 				last_name: "Higgins",
 				status: true
 			},
@@ -39,14 +39,8 @@ export default {
 						inputType: "text",
 						label: "First Name",
 						model: "first_name",
-						attributes: {
-							input: {
-								"data-toggle": "tooltip"
-							},
-							wrapper: {
-								"data-target": "input"
-							}
-						}
+						required: true,
+						validator: "string"
 					},
 					{
 						type: "checkbox",
@@ -90,8 +84,8 @@ export default {
 			},
 
 			formOptions: {
-				validateAfterLoad: true,
-				validateAfterChanged: true,
+				validateAfterLoad: false,
+				validateAfterChanged: false,
 				validateBeforeSave: true
 			}
 		};
@@ -110,7 +104,7 @@ export default {
 
 		modelUpdated(newVal, schema) {
 			console.log("main model has updated", newVal, schema);
-		}
+		},
 	},
 
 	mounted() {
