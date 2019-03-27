@@ -67,6 +67,10 @@ export default {
 					this.updateModelValue(newValue, oldValue);
 				}
 			}
+		},
+
+		isInvalid() {
+			return this.errors.length > 0;
 		}
 	},
 
