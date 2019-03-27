@@ -1,17 +1,8 @@
-# vue-form-generator [![NPM version](https://img.shields.io/npm/v/vue-form-generator.svg)](https://www.npmjs.com/package/vue-form-generator) ![VueJS v2.x compatible](https://img.shields.io/badge/vue%202.x-compatible-green.svg)
+# mirum-vue-form-generator [![NPM version](https://img.shields.io/npm/v/vue-form-generator.svg)](https://www.npmjs.com/package/vue-form-generator) ![VueJS v2.x compatible](https://img.shields.io/badge/vue%202.x-compatible-green.svg)
+
+Forked from [vue-form-generator](https://github.com/vue-generators/vue-form-generator/tree/v2.3.3) v2.3.3
 
 A schema-based form generator component for Vue.js.
-
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d27be05a35bf459b9292b8172e314a08)](https://www.codacy.com/app/mereg-norbert/vue-form-generator_2?utm_source=github.com&utm_medium=referral&utm_content=vue-generators/vue-form-generator&utm_campaign=Badge_Grade)
-[![Build Status](https://travis-ci.org/vue-generators/vue-form-generator.svg?branch=master)](https://travis-ci.org/vue-generators/vue-form-generator)
-[![Coverage Status](https://coveralls.io/repos/github/vue-generators/vue-form-generator/badge.svg?branch=master)](https://coveralls.io/github/vue-generators/vue-form-generator?branch=master)
-[![NPMS.io score](https://badges.npms.io/vue-form-generator.svg)]()
-[![Package Quality](http://npm.packagequality.com/shield/vue-form-generator.svg)](http://packagequality.com/#?package=vue-form-generator)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvue-generators%2Fvue-form-generator.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fvue-generators%2Fvue-form-generator?ref=badge_shield)
-
-[![Dependency Status](https://david-dm.org/vue-generators/vue-form-generator.svg)](https://david-dm.org/vue-generators/vue-form-generator)
-[![devDependency Status](https://david-dm.org/vue-generators/vue-form-generator/dev-status.svg)](https://david-dm.org/vue-generators/vue-form-generator#info=devDependencies)
-[![Downloads](https://img.shields.io/npm/dm/vue-form-generator.svg)](https://www.npmjs.com/package/vue-form-generator)
 
 ## Demo
 
@@ -52,18 +43,6 @@ You can find details about dependencies in the official [documentation](https://
 ### NPM
 
 You can install it via [NPM](http://npmjs.org/) or [yarn](https://yarnpkg.com/).
-
-#### Latest version for Vue 2.x
-
-```
-$ npm install vue-form-generator
-```
-
-#### Legacy version for Vue 1.0.x
-
-```
-$ npm install vue-form-generator@0.6.1
-```
 
 ### Manual
 
@@ -219,26 +198,12 @@ or
 npm run ci
 ```
 
-## More fields _new_
-
-VueFormGenerator supports custom fields. If you decide to release your custom field into the wild, please open a new issue so we can add you to a list here! Please try to use this naming convention for your custom field : vfg-field-\* Example :
-
-*   `vfg-field-myfield`
-*   `vfg-field-calendar`
-*   `vfg-field-awesome-dropdown`
-
-This way, it will be easier for everyone to find it. Thank you !
-
 ### Public Custom Fields
 
 * [vue-tel-input](https://github.com/EducationLink/vue-tel-input) - International Telephone Input Boilerplate with Vue (integrated with VueFormGenerator).
 * [vfg-field-sourcecode](https://github.com/gwenaelp/vfg-field-sourcecode) - A source code field for vue-form-generator
 * [vfg-field-array](https://github.com/gwenaelp/vfg-field-array) - A vue-form-generator field to handle arrays of items of any type.
 * [vfg-field-object](https://github.com/gwenaelp/vfg-field-object) - A vue-form-generator field to handle objects, with or without schemas.
-
-## Contribution
-
-Please send pull requests improving the usage and fixing bugs, improving documentation and providing better examples, or providing some testing, because these things are important.
 
 ## License
 
