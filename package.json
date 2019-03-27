@@ -2,7 +2,7 @@
   "name": "mirum-vue-form-generator",
   "version": "1.0",
   "description": "Forked from vue-generators/vue-form-generator - A schema-based form generator component for Vue.js",
-  "homepage": "https://github.com/evild70/mirum-vue-form-generator/",
+  "homepage": "https://github.com/evild70/mirum-vue-form-generator#v2.3.3-mirum",
   "main": "dist/vfg.js",
   "scripts": {
     "prebuild": "npm run test",
@@ -38,7 +38,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/evild70/mirum-vue-form-generator"
+    "url": "https://github.com/evild70/mirum-vue-form-generator#v2.3.3-mirum"
   },
   "files": [
     "dist/vfg.js",
